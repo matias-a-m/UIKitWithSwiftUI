@@ -42,6 +42,26 @@
 4. **Compatibilidad con VoiceOver**:
    - Asegúrate de que las vistas y controles sean accesibles mediante VoiceOver. Verifica que la navegación y la interacción sean fluidas y que el contenido sea presentado de manera lógica para los usuarios que dependen de tecnologías asistivas.
 
+## Ciclos de Vida y Cómo se Integran
+
+### Ciclo de Vida de la Aplicación
+
+1. **AppDelegate**:
+   - El `AppDelegate` maneja la configuración inicial de la aplicación y es responsable de eventos globales. En este proyecto, `AppDelegate` no gestiona la ventana principal directamente, ya que esto lo hace `SceneDelegate`.
+
+2. **SceneDelegate**:
+   - `SceneDelegate` se encarga del ciclo de vida de las escenas, como el manejo de cuando la escena se conecta o desconecta. Es responsable de configurar la ventana principal y el controlador de vista inicial (`ContentView`) al iniciar la aplicación.
+
+### Ciclo de Vida de las Vistas
+
+1. **ContentView (SwiftUI)**:
+   - El `ContentView` se actualiza automáticamente en respuesta a cambios de estado mediante `@State`. Este manejo declarativo del estado asegura que la interfaz de usuario se actualice de manera eficiente sin necesidad de gestionar manualmente el ciclo de vida de las vistas.
+   - `ContentView` utiliza modificadores de accesibilidad para mejorar la experiencia de usuario y asegura que los elementos sean descritos correctamente para usuarios con discapacidades visuales.
+
+2. **UIKitViewController**:
+   - Mmaneja el ciclo de vida tradicional de las vistas en UIKit, incluyendo métodos como `viewDidLoad`, `viewWillAppear`, y `viewDidAppear`. Estos métodos permiten realizar configuraciones y manejar eventos cuando la vista entra o sale de la pantalla.
+   - La integración con SwiftUI permite presentar `UIKitViewController` desde `ContentView` usando `UIViewControllerRepresentable`, combinando la funcionalidad de UIKit con la flexibilidad de SwiftUI.
+
 ## Ejecución del Proyecto
 
 1. Clona el repositorio.
@@ -52,3 +72,4 @@
 
 **Nota:** Este proyecto es una demostración de la integración entre UIKit y SwiftUI, con un enfoque en la accesibilidad y la capacidad de adoptar nuevas tecnologías de forma gradual.
 
+Este README proporciona una visión completa de los beneficios, desventajas, y prácticas de accesibilidad, así como una explicación del ciclo de vida de la aplicación y la integración entre UIKit y SwiftUI.
