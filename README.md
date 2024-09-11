@@ -2,28 +2,28 @@
 
 ## Descripción
 
-`UIKitWithSwiftUI` es una aplicación de iOS que demuestra la integración de UIKit con SwiftUI. La aplicación ilustra cómo combinar vistas basadas en UIKit (`UIKitViewController`) con vistas de SwiftUI (`ContentView`). Esta combinación permite aprovechar lo mejor de ambos mundos: la madurez y estabilidad de UIKit con la modernidad y flexibilidad de SwiftUI.
+`UIKitWithSwiftUI` es una aplicación de iOS que demuestra la integración entre UIKit y SwiftUI. Esta aplicación ilustra cómo combinar vistas basadas en UIKit (`UIKitViewController`) con vistas de SwiftUI (`ContentView`). La combinación permite aprovechar lo mejor de ambos mundos: la estabilidad y el control granular de UIKit, junto con la modernidad y la simplicidad declarativa de SwiftUI.
 
 ## Beneficios de la Integración
 
 ### Pros
 
 1. **Flexibilidad de Diseño**: SwiftUI ofrece una sintaxis declarativa que facilita la creación de interfaces de usuario complejas y dinámicas, mientras que UIKit proporciona un control detallado sobre la personalización de las vistas y los comportamientos.
-
+   
 2. **Modernización Gradual**: Permite la adopción gradual de SwiftUI en proyectos existentes basados en UIKit. Puedes empezar a integrar componentes de SwiftUI en aplicaciones UIKit sin necesidad de reescribir toda la aplicación.
-
+   
 3. **Accesibilidad Mejorada**: SwiftUI facilita la implementación de características de accesibilidad mediante modificadores como `.accessibilityLabel()` y `.accessibilityHint()`. La integración con UIKit permite mantener la consistencia en las aplicaciones que aún utilizan UIKit.
-
+   
 4. **Manejo Eficiente del Estado**: SwiftUI proporciona una manera simple de manejar el estado y actualizar la interfaz en respuesta a los cambios de datos. Esta capacidad se puede aprovechar junto con UIKit para mejorar la interacción del usuario.
 
 ### Contras
 
 1. **Compatibilidad de Versiones**: SwiftUI está disponible desde iOS 13 y puede no estar completamente compatible con versiones anteriores, lo que puede limitar la capacidad de soportar versiones más antiguas de iOS.
-
+   
 2. **Complejidad en la Integración**: La combinación de UIKit y SwiftUI puede añadir una capa de complejidad al proyecto, especialmente cuando se gestionan transiciones entre vistas de ambos frameworks.
-
+   
 3. **Curva de Aprendizaje**: Los desarrolladores que están familiarizados únicamente con UIKit pueden necesitar tiempo para adaptarse a la nueva sintaxis y conceptos de SwiftUI.
-
+   
 4. **Problemas de Rendimiento**: En algunos casos, la integración de componentes de SwiftUI en una aplicación UIKit puede introducir problemas de rendimiento o comportamiento inesperado, especialmente si no se manejan correctamente las actualizaciones y los estados.
 
 ## Prácticas de Accesibilidad
@@ -51,3 +51,4 @@
 ---
 
 **Nota:** Este proyecto es una demostración de la integración entre UIKit y SwiftUI, con un enfoque en la accesibilidad y la capacidad de adoptar nuevas tecnologías de forma gradual.
+
