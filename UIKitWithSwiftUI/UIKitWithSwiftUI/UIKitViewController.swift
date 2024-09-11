@@ -1,7 +1,7 @@
 import UIKit
 
 /// `SecondViewController` es una vista de controlador que incluye un botón para regresar a la pantalla anterior.
-class SecondViewController: UIViewController {
+class UIKitViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

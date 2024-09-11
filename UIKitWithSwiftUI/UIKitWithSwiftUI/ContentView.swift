@@ -161,11 +161,11 @@ struct ActivityIndicatorView: UIViewRepresentable {
 
 /// `SecondViewControllerWrapper` es una vista de SwiftUI que presenta `SecondViewController` utilizando un `UIViewControllerRepresentable`.
 struct SecondViewControllerWrapper: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> SecondViewController {
-        return SecondViewController()
+    func makeUIViewController(context: Context) -> UIKitViewController {
+        return UIKitViewController()
     }
 
-    func updateUIViewController(_ uiViewController: SecondViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: UIKitViewController, context: Context) {
         // No se necesita actualizar el UIViewController aquí.
     }
 }

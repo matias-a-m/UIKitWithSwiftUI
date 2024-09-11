@@ -2,7 +2,7 @@
 
 ## Descripción
 
-`UIKitWithSwiftUI` es una aplicación de iOS que demuestra la integración de UIKit con SwiftUI. La aplicación ilustra cómo combinar vistas basadas en UIKit (`SecondViewController`) con vistas de SwiftUI (`ContentView`). Esta combinación permite aprovechar lo mejor de ambos mundos: la madurez y estabilidad de UIKit con la modernidad y flexibilidad de SwiftUI.
+`UIKitWithSwiftUI` es una aplicación de iOS que demuestra la integración de UIKit con SwiftUI. La aplicación ilustra cómo combinar vistas basadas en UIKit (`UIKitViewController`) con vistas de SwiftUI (`ContentView`). Esta combinación permite aprovechar lo mejor de ambos mundos: la madurez y estabilidad de UIKit con la modernidad y flexibilidad de SwiftUI.
 
 ## Beneficios de la Integración
 
